@@ -94,4 +94,4 @@ src/
 
 ## Built By
 
-**Nitoos** — HashedIn × Deloitte Competition Entry, 2026
+**Nitoos** — For APL, 2026
