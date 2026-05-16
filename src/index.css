@@ -1,0 +1,131 @@
+:root {
+  --primary: #1a73e8;
+  --primary-hover: #1765cc;
+  --secondary: #5f6368;
+  --success: #34a853;
+  --error: #d93025;
+  --warning: #f9ab00;
+  --bg-main: #f8f9fa;
+  --bg-card: #ffffff;
+  --border: #e0e0e0;
+  --text-main: #202124;
+  --text-secondary: #5f6368;
+  --text-light: #9aa0a6;
+  --shadow-sm: 0 1px 2px rgba(60,64,67,0.1);
+  --shadow-md: 0 1px 3px rgba(60,64,67,0.15), 0 4px 8px rgba(60,64,67,0.1);
+  --shadow-lg: 0 8px 40px rgba(60,64,67,0.28);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Google Sans Text', 'Google Sans', 'Segoe UI', Roboto, -apple-system, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input {
+  outline: none;
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+
+input:focus {
+  border-color: var(--primary);
+  border-width: 2px;
+}
+
+/* Animations */
+@keyframes emojiPop {
+  0% { transform: scale(0); opacity: 1; }
+  15% { transform: scale(1.35); opacity: 1; }
+  35% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.8) translateY(-50px); opacity: 0; }
+}
+
+@keyframes particleBurst {
+  0% { transform: translate(-50%,-50%) scale(1); opacity: 0.8; }
+  100% { transform: translate(calc(-50% + var(--px)), calc(-50% + var(--py))) scale(0); opacity: 0; }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalSlide {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes slideInDown {
+  from { opacity: 0; transform: translate(-50%, -20px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+@keyframes waveMove {
+  0% { left: -350px; opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { left: 120%; opacity: 0; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dadce0;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bdc1c6;
+}
+
+/* Chat specific scrollbar */
+.chat-scroll-area::-webkit-scrollbar {
+  width: 4px;
+}
+
+.chat-scroll-area::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+}
+
+.chat-scroll-area::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
