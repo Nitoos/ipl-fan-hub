@@ -95,3 +95,28 @@ src/
 ## Built By
 
 **Nitoos** — For APL, 2026
+
+---
+
+## Verification Results
+
+The application has been verified with the following results:
+- ✅ **Scoreboard**: Correctly displays match data and looks premium.
+- ✅ **Reactions**: Emoji bursts pop up and animate as expected.
+- ✅ **Voting**: Percentage bars update smoothly upon casting a vote.
+- ✅ **XP System**: XP increases correctly when making predictions (e.g., +25 XP for a 6).
+- ✅ **Room Creation**: Modals work perfectly, allowing room naming and friend selection.
+- ✅ **Chat**: Messages are sent and displayed instantly in the correct channel.
+- ✅ **Boundary Wagon Wheel**: Interactive sectors log predictions, and visual state updates correctly.
+- ✅ **Pitch Pressure Zone**: Interactive grid highlights fan predictions in real-time.
+- ✅ **Live Fan Presence**: Stadium heatmap redesigned to SVG vector graphics with better glow and team-based visualizations.
+
+---
+
+## Visual Documentation
+
+![Cricket Watch Party Final UI](./walkthrough_screenshot.png)
+
+### Video Walkthrough
+The full interaction flow was recorded during verification:
+![Interaction Flow](./walkthrough_video.webp)
