@@ -92,6 +92,14 @@ src/
 
 ---
 
+## Live Demo
+
+**[https://ipl-fan-hub-371287462993.asia-south1.run.app](https://ipl-fan-hub-371287462993.asia-south1.run.app)**
+
+Deployed on **Google Cloud Run** (Mumbai — `asia-south1`), served via nginx on a containerised Vite production build. Scales to zero when idle.
+
+---
+
 ## Built By
 
 **Nitoos** — For APL, 2026
